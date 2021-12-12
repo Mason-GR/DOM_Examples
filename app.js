@@ -1,3 +1,4 @@
+// BOX ANIMATION
 let timer = setInterval(move, 100);
 
 // Boxes starting position
@@ -34,3 +35,34 @@ document
   .addEventListener("click", function () {
     modal.style.display = "none";
   });
+
+let modal2 = document.getElementsByClassName("modal2")[0];
+
+document
+  .getElementsByClassName("open")[0]
+  .addEventListener("click", function () {
+    modal2.style.display = "flex";
+  });
+
+document
+  .getElementsByClassName("close")[0]
+  .addEventListener("click", function () {
+    modal2.style.display = "none";
+  });
+
+// FLASH ALERT
+
+let btn2 = document.querySelector("#btn-2");
+let alert = document.querySelector(".alert");
+let alertMsg = document.querySelector(".alert-msg");
+
+btn2.addEventListener("click", flashAlert);
+
+function flashAlert() {
+  alert.style.display = "block";
+  alertMsg.textContent = "Hooray! Flash alert has been triggered for 3 seconds!";
+
+  setTimeout(function () {
+    alert.style.display = "none";
+  }, 3000);
+}

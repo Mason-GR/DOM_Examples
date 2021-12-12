@@ -8,10 +8,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="alert">
+      <p class="alert-msg"></p>
+    </div>
     <div class="modal">
       <div class="modal-body">
         <h1 id="title-mod">Congratulations it has been five seconds!</h1>
         <button class="modal-btn">X</button>
+      </div>
+    </div>
+    <div class="modal2">
+      <div class="modal-content">
+        <header class="modal-header">
+          Congratulations You Clicked Me!
+          <button class="close">X</button>
+        </header>
+        <section class="modal-content">
+          <p><strong>Press X, to close the modal</strong></p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque,
+            nisi laudantium! Ipsa ex minus exercitationem unde earum at suscipit
+            placeat eveniet, incidunt sed, eligendi qui consequatur, quasi
+            quaerat hic deleniti.
+          </p>
+        </section>
+        <footer class="modal-footer">
+          <small
+            >Made with <span>❤</span> by
+            <a href="https://github.com/Mason-GR" target="_blank"
+              >Mason Gregory</a
+            ></small
+          >
+        </footer>
       </div>
     </div>
     <div id="container">
@@ -22,8 +50,9 @@
       <input type="text" id="message" palceholder="Type a title..." />
     </div>
     <div class="main-btn">
-      <button id="btn">Click Me</button>
+      <button class="open" id="btn">Click Me</button>
     </div>
+    <div class="flsh-btn"><button id="btn-2">Click Me Aswell!</button></div>
     <script src="app.js"></script>
   </body>
 </html>
