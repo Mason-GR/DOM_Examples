@@ -144,10 +144,10 @@ button {
 .alert {
   position: fixed;
   top: 1rem;
-  margin: 0 auto;
+  margin: 0 calc((100vw - 400px) / 2);
   width: 100%;
   max-width: 400pc;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   border-radius: 1rem;
   display: none;

@@ -59,10 +59,16 @@ let alertMsg = document.querySelector(".alert-msg");
 btn2.addEventListener("click", flashAlert);
 
 function flashAlert() {
+  alert.style.backgroundColor = `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
   alert.style.display = "block";
-  alertMsg.textContent = "Hooray! Flash alert has been triggered for 3 seconds!";
+  alertMsg.textContent =
+    "Hooray! Flash alert has been triggered for 3 seconds!";
 
   setTimeout(function () {
     alert.style.display = "none";
   }, 3000);
+}
+
+function randomRGB() {
+  return Math.round(Math.random() * 255);
 }
