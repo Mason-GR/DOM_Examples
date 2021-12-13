@@ -1,20 +1,39 @@
-// BOX ANIMATION
-let timer = setInterval(move, 100);
+// BOX ANIMATION LEFT TO RIGHT
+// let timer = setInterval(move, 100);
 
-// Boxes starting position
-let boxPosition = 0;
-// Select the box by it's ID
-let box = document.getElementById("box");
+// // Boxes starting position
+// let boxPosition = 0;
+// // Select the box by it's ID
+// let box = document.getElementById("box");
+
+// function move() {
+//   if (boxPosition >= 175) {
+//     clearInterval(timer);
+//   } else {
+//     boxPosition += 1; // Imcreases the boxPosition value by 1
+//     box.style.left = boxPosition + "px";
+//     // Updates box's position from the left of the container
+//   }
+// }
+
+// BOX ANIMATION CIRCULAR
+
+let x = 0;
+let y = 0;
+let box2 = document.querySelector("#box-2");
+let container3 = document.querySelector("#container-3");
+
+let timer2 = setInterval(move, 50);
 
 function move() {
-  if (boxPosition >= 175) {
-    clearInterval(timer);
-  } else {
-    boxPosition += 1; // Imcreases the boxPosition value by 1
-    box.style.left = boxPosition + "px";
-    // Updates box's position from the left of the container
+  if (x == container3.clientWidth) {
+    clearInterval(timer2);
+    return;
   }
+  box2.style.left = ++x + "px";
 }
+
+move();
 
 let input = document.getElementById("message");
 // selecting by ID's

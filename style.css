@@ -37,7 +37,7 @@ button {
   border-radius: 6px;
 }
 
-/* BOX ANIMATION */
+/* BOX ANIMATION LEFT TO RIGHT */
 #container {
   width: 250px;
   height: 250px;
@@ -49,6 +49,32 @@ button {
   width: 75px;
   height: 75px;
   background: burlywood;
+  position: absolute;
+}
+
+/* BOX ANIMATION CIRCULAR */
+
+/* .placement {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 2rem;
+} */
+
+#container-3 {
+  width: 250px;
+  height: 250px;
+  background: #091771;
+  position: relative;
+}
+
+#box-2 {
+  width: 75px;
+  height: 75px;
+  background: #ffce0a;
   position: absolute;
 }
 
